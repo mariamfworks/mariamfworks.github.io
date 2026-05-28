@@ -1,7 +1,7 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Projects",
+    link: "#projects",
   },
   {
     name: "Experience",
@@ -12,20 +12,21 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Achievements",
+    link: "#achievements",
   },
 ];
 
 const words = [
+  { text: "Problems", imgPath: "/images/problems.svg" },
+  { text: "Creations", imgPath: "/images/creations.svg" },
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
   { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Innovations", imgPath: "/images/innovations.svg" },
+  { text: "Theory", imgPath: "/images/theory.svg" },
+
 ];
 
 const counterItems = [
@@ -37,37 +38,70 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/arduino-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/bash-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/c-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/cplusplus-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/googlecolab-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/java-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/kaggle-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/leetcode-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/mysql-original.png",
+  },
+  /*{
+    imgPath: "/images/logos/nextjs-original.png",
+  },*/
+  {
+    imgPath: "/images/logos/nodejs-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/npm-original.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/numpy-original.png",
+  },
+  {
+    imgPath: "/images/logos/pandas-original.png",
+  },
+  {
+    imgPath: "/images/logos/pytorch-original.png",
+  },
+  {
+    imgPath: "/images/logos/scikitlearn-original.png",
+  },
+  {
+    imgPath: "/images/logos/react-original.png",
+  },
+  {
+    imgPath: "/images/logos/streamlit-original.png",
+  },
+  {
+    imgPath: "/images/logos/vite-original.png",
+  },
+  {
+    imgPath: "/images/logos/vscode-original.png",
+  },
+  {
+    imgPath: "/images/logos/yaml-original.png",
+  },
+  {
+    imgPath: "/images/logos/canva-original.png",
   },
 ];
 
@@ -78,15 +112,15 @@ const abilities = [
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
+  imgPath: "/images/time.png", // or a 'bolt' icon
+  title: "Technical Agility",
+  desc: "A rapid learner capable of mastering new tech stacks and frameworks in record time.",
+},
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
+  imgPath: "/images/star.png", 
+  title: "Sustainable Innovation",
+  desc: "Applying AI and engineering to transform waste into high-impact industrial solutions.",
+}
 ];
 
 const techStackImgs = [
@@ -136,50 +170,26 @@ const techStackIcons = [
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
-  },
-  {
+  }
+  /*{
     name: "Project Manager",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
-  },
+  },*/
 ];
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    //review: "",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    logoPath: "/images/logo1.jpg",
+    title: "Machine Learning and Computer Vision Intern",
+    date: "April 2026 - May 2026",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Deconstructed, manipulated, and reconstructed media streams with custom audio integration.",
+      "Implemented state-of-the-art object detection and precise semantic segmentation models.",
+      "Engineered proprietary datasets to train and deploy specialized neural weights."
     ],
   },
 ];
@@ -192,11 +202,7 @@ const expLogos = [
   {
     name: "logo2",
     imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
-  },
+  }
 ];
 
 const testimonials = [
@@ -204,64 +210,62 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      ".",
     imgPath: "/images/client1.png",
-  },
-  {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
-  },
+  }
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "Github",
+    imgPath: "/images/github-origin.png",
+    link: "https://www.github.com/mariamfworks"
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/mariam-f-a85266319/"
   },
 ];
+
+const achievementscards = [
+    {
+      title: "Machine Learning and Computer Vision Intern",
+      org: "IIIT Hyderabad",
+      date: "2026",
+      desc: "Attended a 6-months program followed by a 1-month internship. Built end-to-end CV pipelines for real-time object detection and semantic segmentation using YOLO and advanced image processing.",
+      img: "/images/iiit-internship.PNG"
+    },
+    {
+      title: "Data Analytics Simulation",
+      org: "Tata Group",
+      date: "February 2026",
+      desc: "Completed the Forage job simulation focusing on financial risk, delinquency modeling, and executive-level data visualization.",
+      img: "/images/tata-certificate.png"
+    },
+    {
+      title: "Research Publication",
+      org: "BITS Pilani / Technical Paper",
+      date: "2025",
+      desc: "Authored research on Homomorphic Encryption, exploring secure computation methods for sensitive data in cloud environments.",
+      img: "/images/bits-HE.PNG"
+    },
+    {
+      title: "Certificate of Distinction",
+      org: "Indian Institute of Technology (IIT), Madras",
+      date: "2025",
+      desc: "Advanced to the final round of Shaastra Programming Contest hosted by IIT, Madras.",
+      img: "/images/shaastra-2025.PNG"
+    },
+    {
+      title: "Research Publication",
+      org: "Journal of Emerging Technologies and Innovative Research (JETIR)",
+      date: "2025",
+      desc: "Authored research on Progress of Education as an SDG\nlink: https://www.jetir.org/view?paper=JETIR2504523",
+      img: "/images/sdgppr.PNG"
+    }
+  ];
+
 
 export {
   words,
@@ -275,4 +279,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  achievementscards
 };

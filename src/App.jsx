@@ -1,4 +1,5 @@
-import Testimonials from "./sections/Testimonials";
+import Achievements from "./sections/Achievements";
+//import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
 import TechStack from "./sections/TechStack";
@@ -18,7 +19,8 @@ const App = () => (
     <FeatureCards />
     <Experience />
     <TechStack />
-    <Testimonials />
+    <Achievements />
+    {/*<Testimonials />*/}
     <Contact />
     <Footer />
   </>

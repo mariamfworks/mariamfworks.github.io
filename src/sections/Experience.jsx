@@ -4,17 +4,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
+//import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   useGSAP(() => {
-    // Loop through each timeline card and animate them in
-    // as the user scrolls to each card
+    // Loop through each timeline card and animate them in as the user scrolls to each card
     gsap.utils.toArray(".timeline-card").forEach((card) => {
-      // Animate the card coming in from the left
-      // and fade in
+      // Animate the card coming in from the left and fade in
       gsap.from(card, {
         // Move the card in from the left
         xPercent: -100,
@@ -53,8 +51,7 @@ const Experience = () => {
         end: "70% center",
         // Update the animation as the user scrolls
         onUpdate: (self) => {
-          // Scale the timeline height as the user scrolls
-          // from 1 to 0 as the user scrolls up the screen
+          // Scale the timeline height as the user scrolls from 1 to 0 as the user scrolls up the screen
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
           });
@@ -104,11 +101,11 @@ const Experience = () => {
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                  {/* <GlowCard card={card}>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
-                  </GlowCard>
+                  </GlowCard> */}
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
