@@ -65,7 +65,7 @@ const AppShowcase = () => {
         <div ref={titleRef} className="flex flex-col gap-4 mb-16">
           {/*<p className="hero-badge">Portfolio</p>*/}
           <h2 className="text-white font-bold md:text-6xl text-4xl">
-            <center> Feautured Projects - The <span className="text-blue-500">Lab</span> </center>
+            <center> Featured Projects - The <span className="text-blue-500">Lab</span> </center>
           </h2>
           {/*<p className="text-white-50 md:text-xl max-w-2xl">
             A showcase of specialized AI systems, IoT innovations, and data-driven 
